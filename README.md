@@ -1,4 +1,4 @@
-[Hux Blog](https://huangxuan.me)
+[RU Blog](https://zongru666.github.io)
 ================================
 
 > I never expected this to become popular.
@@ -50,7 +50,7 @@ Ports
 - Out of date. Helps wanted for updating it on par with the main repo
 
 Translation
-- [🇨🇳  中文文档（有点过时）](https://github.com/Huxpro/huxpro.github.io/blob/master/_doc/README.zh.md)
+- [🇨🇳  中文文档（有点过时）](https://github.com/zongru666/zongru666.github.io/blob/master/_doc/README.zh.md)
 
 
 License
@@ -59,5 +59,5 @@ License
 Apache License 2.0.
 Copyright (c) 2015-present Huxpro
 
-Hux Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
-Copyright (c) 2013-2016 Blackrock Digital LLC.
+RU Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
+Copyright (c) 2013-2024 Blackrock Digital LLC.
