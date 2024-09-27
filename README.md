@@ -3,7 +3,9 @@
 
 > I never expected this to become popular.
 
-![](http://huangxuan.me/img/blog-desktop.jpg)
+![readme](https://github.com/user-attachments/assets/bfda54e4-d851-444f-937f-a1ba105f2532)
+
+
 
 
 [User Manual 👉](_doc/Manual.md)
