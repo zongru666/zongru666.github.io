@@ -140,6 +140,10 @@ https://baijiahao.baidu.com/s?id=1756789426775362394&wfr=spider&for=pc
 安装Wingdings 2字体
 ```
 
+- 10:40 2024/10/13 周六
+**在VMware Workstation 16以上版本中，虽然共享虚拟机选项从首选项菜单中移除，但其功能并未失效。解决443（https）端口被占用的问题：**
+```C:\ProgramData\VMware\hostd\proxy.xml文件，找到httpsPort字段，将其值设为442之类的端口。```
+
 
 
 
