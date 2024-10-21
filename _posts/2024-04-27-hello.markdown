@@ -144,8 +144,24 @@ https://baijiahao.baidu.com/s?id=1756789426775362394&wfr=spider&for=pc
 **在VMware Workstation 16以上版本中，虽然共享虚拟机选项从首选项菜单中移除，但其功能并未失效。解决443（https）端口被占用的问题：**
 ```C:\ProgramData\VMware\hostd\proxy.xml文件，找到httpsPort字段，将其值设为442之类的端口。```
 
-
-
+- 14:30 2024/10/21 周一
+**虚拟机开机无界面自启动**
+```
+在VMware Workstation和Vbox中，你可以通过命令行方式让虚拟机在系统开机时自动启动并后台运行。在对应的安装目录下，你可以找到vmrun.exe（VMware Workstation）和VBoxManage.exe（Vbox）工具。
+对于VMware Workstation，启动指定虚拟机的命令是：
+vmrun -T ws start "指定虚拟机vmx文件路径" [gui|nogui]
+例如，无界面模式启动openwrt虚拟机的命令为：vmrun -T ws start "D:\VirtualBox VMs\openwrt\openwrt.vmx" nogui。
+在Vbox中，启动命令为：
+vboxmanage startvm "虚拟机名称" [--type gui|sdl|headless|separate]
+无界面启动时，加上--type headless，如：vboxmanage startvm "opwnwrt vbox" --type headless。
+如果命令工具不在环境变量中，需要使用完整路径执行，例如：
+D:\Program Files (x86)\VMware\VMware Workstation\vmrun.exe -T ws start "D:\VirtualBox VMs\openwrt\openwrt.vmx" nogui
+以下是两种不同的方法来实现开机自动启动虚拟机：
+方法一：使用组策略
+创建一个批处理文件（如vm_ubuntu_server_start.bat），内容为上述启动命令，然后在组策略编辑器中，将此批处理文件配置为登录脚本，重启电脑验证功能。
+方法二：创建快捷方式
+在文件资源管理器的启动文件夹（shell:startup 或 %appdata%\Microsoft\Windows\Start Menu\Programs\Startup）中创建一个指向命令行启动命令的快捷方式，这样每次开机时，虚拟机就会自动启动了。
+```
 
 
 ## 后记
