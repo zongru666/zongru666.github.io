@@ -105,8 +105,8 @@ F12，找到开关按钮元素，删掉disable属性，开关显示还是灰色�
 ```
 Shift+F10或Fn+Shift+F10，
 输入taskkill /F /IM oobenetworkconnectionflow.exe来结束联网进程；
-输入taskmgr命令调出任务管理器，找到Network Connection Flow进程并右击结束进程；
-输入oobe\bypassnro.cmd。
+或者输入taskmgr命令调出任务管理器，找到Network Connection Flow进程并右击结束进程；
+最后输入oobe\bypassnro.cmd，回车。
 ```
 
 - 16:52 2024/6/13 周四  
