@@ -126,6 +126,8 @@ Shift+F10或Fn+Shift+F10，
 https://baijiahao.baidu.com/s?id=1756789426775362394&wfr=spider&for=pc
 ```
 把硬盘仿真的raid改为ahci
+或者
+将VMD setup menu的Enable VMD control改为disable
 ```
 
 - 10:10 2024/8/2 周五  
