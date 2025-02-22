@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Hello RU"
+title:      "Hello THIS IS RU'S CHANNEL"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2024-04-27 12:00:00
 author:     "RU"
@@ -164,6 +164,15 @@ D:\Program Files (x86)\VMware\VMware Workstation\vmrun.exe -T ws start "D:\Virtu
 方法二：创建快捷方式
 在文件资源管理器的启动文件夹（shell:startup 或 %appdata%\Microsoft\Windows\Start Menu\Programs\Startup）中创建一个指向命令行启动命令的快捷方式，这样每次开机时，虚拟机就会自动启动了。
 ```
+
+- 18:30 2025/02/22 周六
+**任务栏时钟显示秒数，日期显示星期**
+按下“Windows + R”组合键，打开运行窗口，输入“regedit”，回车
+打开路径
+···HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced···
+新建DWORD（32位）值命名为“ShowSecondsInSystemClock”，双击“ShowSecondsInSystemClock”，在弹出的编辑窗口中，将“数值数据”设置为“1”，点击“确定”。此操作告诉系统在任务栏中显示秒数。
+重启资源管理器或重启计算机。
+
 
 
 ## 后记
