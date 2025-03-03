@@ -13,26 +13,46 @@ multilingual: true
      DO NOT EDIT! -->
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
     <style>
+        /* 全局样式，去除默认样式 */
         details {
             border: 1px solid #ccc;
             border-radius: 4px;
-            padding: 0.5em 0.5em 0;
+            margin-bottom: 10px;
+            overflow: hidden;
         }
 
         summary {
-            font-weight: bold;
-            margin: -0.5em -0.5em 0;
-            padding: 0.5em;
+            padding: 10px 20px;
             background-color: #f0f0f0;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
         }
 
-        details[open] {
-            padding: 0.5em;
+        /* 隐藏默认的箭头 */
+        summary::-webkit-details-marker {
+            display: none;
         }
 
-        details[open] summary {
-            border-bottom: 1px solid #ccc;
-            margin-bottom: 0.5em;
+        /* 添加自定义箭头 */
+        summary::before {
+            content: '▶';
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.2s ease;
+        }
+
+        /* 展开时箭头旋转 */
+        details[open] summary::before {
+            transform: translateY(-50%) rotate(90deg);
+        }
+
+        /* 详细内容样式 */
+        details p {
+            padding: 10px 20px;
+            margin: 0;
         }
     </style>
 <TITLE>Bookmarks</TITLE>
