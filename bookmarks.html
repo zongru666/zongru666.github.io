@@ -19,6 +19,7 @@ multilingual: true
             border-radius: 4px;
             margin-bottom: 10px;
             overflow: hidden;
+            padding-left: 20px; /* 为整个 details 块添加左侧内边距，模拟缩进 */
         }
 
         summary {
@@ -27,6 +28,7 @@ multilingual: true
             cursor: pointer;
             list-style: none;
             position: relative;
+            margin-left: -20px; /* 抵消 details 的左侧内边距，使 summary 左对齐 */
         }
 
         /* 隐藏默认的箭头 */
@@ -38,7 +40,7 @@ multilingual: true
         summary::before {
             content: '▶';
             position: absolute;
-            left: 10px;
+            left: 0;
             top: 50%;
             transform: translateY(-50%);
             transition: transform 0.2s ease;
@@ -49,8 +51,9 @@ multilingual: true
             transform: translateY(-50%) rotate(90deg);
         }
 
-        /* 详细内容样式 */
+        /* 详细内容样式，设置首行缩进 */
         details p {
+            text-indent: 20px; /* 首行缩进 */
             padding: 10px 20px;
             margin: 0;
         }
@@ -2026,17 +2029,17 @@ multilingual: true
             </DL><p>
                 </details>
             <details>
-    <summary><H ADD_DATE="1654187530" LAST_MODIFIED="1737335331">娱乐</H></summary>
+            <summary><H ADD_DATE="1654187530" LAST_MODIFIED="1737335331">娱乐</H></summary>
             <DL><p>
                 <details>
-    <summary><H ADD_DATE="1654187530" LAST_MODIFIED="1736747718">影视</H></summary>
+                <summary><H ADD_DATE="1654187530" LAST_MODIFIED="1736747718">影视</H></summary>
                 <DL><p>
                     <details>
-    <summary><H ADD_DATE="1595817066" LAST_MODIFIED="1595817066">粤语</H></summary>
+                    <summary><H ADD_DATE="1595817066" LAST_MODIFIED="1595817066">粤语</H></summary>
                     <DL><p>
                         <DT><A HREF="http://www.yatu.tv/m/" ADD_DATE="1575963873" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAA/klEQVQ4jZWSPW7CQBCFP0dI6xaUOq2TKyBBOASFuxyAC9B59xDuk84SPgEFsbkEoSQtwdRUL4V/sJQY5KnejN6beTO7HjajTwwARa83GF/fP8Dz0yPguXxwt+XLWwzoMyrTh15+WgJrsfZaLgqsJU3te7VhA2pBkuAcaVql4zHOAe4jLwsNAJtJ0mol0HAoSaeTQCBpdzgys8zs7nCUhM3qCfM5xnA+UxQsFgBR1BynDVpLL5eVmSS5pp1LN4z9HiAM8f17At9nMqlwHP/L/vMOYQgQBIxGXYL6SmUYI1CeqyNaVwK2Wy4XjGE67W7ftrTZEASs1zfYgNf3e/8CMYh9V6wcV2cAAAAASUVORK5CYII=">雅图在线影院</A>
                         <details>
-    <summary><H ADD_DATE="1725073470" LAST_MODIFIED="1725094209">已失效</H></summary>
+                        <summary><H ADD_DATE="1725073470" LAST_MODIFIED="1725094209">已失效</H></summary>
                         <DL><p>
                             <DT><A HREF="http://www.yuesp.com/" ADD_DATE="1575963896">粤视频-粤语电视剧-粤语电影-粤语综艺</A>
                             <DT><A HREF="https://939394.org/" ADD_DATE="1575962399" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAABKklEQVQ4jZVSIa+CUBj99N05LQ75AQSJJGgSTWQ3h1jojI1/QiAQnYGgg+BGJrBhZCNCMDmj0vnYeAEFfHsBTvh2vnvP2Tl3u6Pj8QhDMAaA1WrVf45M0xyUQGia3u12PdWn02ncR3e9XtuEhu33+ziOCSEAQAjxfZ9hmCiKbNvOsiyO478GXdcNw5hMJvWqadpisUiSZD6fL5fLRtZWEkWxLMtuE57nZ7MZAFAU9U8lAKiqquHb7VZVVVEUwzB8PB5fBkSslyAIbrfb/X7P89x1XUVRBEEQBCFN06Io2krFB9PplOM4SZIul8v5fN5sNoiIiCzL1uRtwG/Isuw4DiI6jiPLcvfqXamJq3E4HJqTLn+/4fV6eZ4HvfFjWdbz+Vyv1z3naOj3/gX8R7n9Dh7X+AAAAABJRU5ErkJggg==">港剧网_粤语屋_粤语电影_粤语电视剧-粤正影视</A>
@@ -2046,11 +2049,11 @@ multilingual: true
                             <DT><A HREF="http://www.tvbwind.com/vod/1146-1-1.html" ADD_DATE="1568722937" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACcElEQVQ4jV2TPYxVdRDFf2fuf9++RYKFIpEEdpE1NCYWNIaKRAuBQipKCaUmhoRg/xobCktDS2OxlQHZLZQGEzsTMZHOT8iyUfmIsm/fu/f+51i8B2ucZpI5k5PJOWe0sXz0ShPxsYGaWRVhbBkkCMACDMxbBUqR6OxLWj+yuhVoyfakSK8MJKqhxdg2kgzIdiNpIDHO3FmQ+t5sxlBxINM3kv7Nvu/fG9f8tHV+6/RTScK27BRQzYNx1qvudKLFayEfKwsSU7s7/duvW8D1m68euaPSfyaXF6zmqwbtr3aWUJl29fKZ+z9/DrC+stoGckwyJ0gNoDVoykBvR1n84NT9X34A3xpGyCJlW8rxCGIEAVYjiN4O5gKdg1qlbScnrx987TDowNT5dyMpAUc0I8gRJLYtKSymgOYkqGpH4o09i+V7m62u5if7IhYaSVGfmQFISpvATIhdgkpFEj15I+rko9O//3TlSddfrPBnFy78p4wJ4EWZyv+QNLXLjB9hgDhkWCyQuzt2UVCA4pnVs0pVCsP9Tbnwh4aP7y2vuoTexyyI5vmlzCwmJNL2c6CUWWge1doNaM4Dx7an28db+47x0u4FMpID00loBGEQNessNGZR8ZKlp2c3N+9Jvi1YWoPGIEkxExEmsj2CFJgo+yxJduxkpuV31ldW3iJ1zdbX56AKDElvVAytYfDl4aPHI/RhwplnHlesQC+bcpvgruG7m8uv3ypdflPRADzRxsrqF430brW9J2I4salzceZiG0kDoEj0htb1cUjDNH+F+v4q9o6g2c78J2ePU20e5mwOdrZ2Hdt966wo9go9JL3xL8nQeYCRGp1EAAAAAElFTkSuQmCC">鸡同鸭讲高清粤语手机在线观看免费－TVBWind港剧网</A>
                             <DT><A HREF="http://www.93z.cc/play/3174-0-1.html" ADD_DATE="1557467673">《黄飞鸿之壮志凌云》国粤双语云播在线观看-广府影院</A>
                         </DL><p>
-                </details>
+                        </details>
                     </DL><p>
-                </details>
+                    </details>
                     <details>
-    <summary><H ADD_DATE="1736407041" LAST_MODIFIED="1737335194">电视直播</H></summary>
+                    <summary><H ADD_DATE="1736407041" LAST_MODIFIED="1737335194">电视直播</H></summary>
                     <DL><p>
                         <DT><A HREF="https://github.com/lizongying/my-tv/releases" ADD_DATE="1736407041">Releases · lizongying/my-tv</A>
                         <DT><A HREF="https://xn--z7x900a.live/" ADD_DATE="1736407041">肥猫 | ✎ℳ𝓪𝓸(tvbox源)</A>
