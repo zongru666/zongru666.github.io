@@ -173,6 +173,11 @@ D:\Program Files (x86)\VMware\VMware Workstation\vmrun.exe -T ws start "D:\Virtu
 新建DWORD（32位）值命名为“ShowSecondsInSystemClock”，双击“ShowSecondsInSystemClock”，在弹出的编辑窗口中，将“数值数据”设置为“1”，点击“确定”。此操作告诉系统在任务栏中显示秒数。 
 重启资源管理器或重启计算机。
 
+- 22:30 2025/03/22 周六
+**win10 两个开机启动文件夹**
+```C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp```
+```C:\Users\LZR\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup```
+
 
 
 ## 后记
