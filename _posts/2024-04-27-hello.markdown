@@ -175,7 +175,9 @@ D:\Program Files (x86)\VMware\VMware Workstation\vmrun.exe -T ws start "D:\Virtu
 
 - 22:30 2025/03/22 周六
 **win10 两个开机启动文件夹**
+  
 ```C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp```
+
 ```C:\Users\LZR\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup```
 
 
