@@ -181,6 +181,10 @@ D:\Program Files (x86)\VMware\VMware Workstation\vmrun.exe -T ws start "D:\Virtu
 ```C:\Users\LZR\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup```
 
 
+**微软拼音输入法问题：**
+新版的微软拼音确实字体大小只能全局设置，您可以打开设置，时间和语言，语言，中文，选项，微软拼音，选项，常规，打开兼容性，可以恢复成之前的输入法，以单独调节字体大小
+
+
 
 ## 后记
 
